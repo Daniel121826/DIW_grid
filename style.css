@@ -4,10 +4,24 @@
     --color-manage-accounts: #ffffff;
     --color-consistent-schedule: #faeee2;
     --color-schedule-to-social: #d6b3ff;
-    --color-analytics: #ff61a6;
     --color-background: #f2f2f2;
     --color-create-post: #ffda7b;
     --color-purple: #7b61ff;
+
+    --margin-cards: 12px;
+    --font-size-div1-h2: 3rem;
+    --font-size-div2-h2: 3rem;
+    --font-size-div3-h1: 4rem;
+    --font-size-div4-h2: 2.5rem;
+    --font-size-div5-h2: 2.5rem;
+    --font-size-div6-h2: 4rem;
+    --font-size-div7-h2: 3rem;
+    --font-size-div8-h2: 2.5rem;
+    /*Container_Variable*/
+    --margin-container: 0 auto;
+    --padding-container: 50px;
+    --gap-container: 20px;
+
 }
 
 @font-face {
@@ -21,9 +35,9 @@ body {
   padding: 0;
 }
 .container {
-  margin: 0 auto;
-  padding: 50px;
-  gap: 20px;
+  margin: var(--margin-container);
+  padding: var(--padding-container);
+  gap: var(--gap-container);
 
 }
 .purple {
@@ -33,13 +47,9 @@ body {
     font-style: italic;
 }
 
-p {
-  font-size: 0.95rem;
-  line-height: 1.4;
-}
 
 .highlight {
-  color: #fde68a;
+  color: var(--color-create-post);
 }
 
 .subtitle {
@@ -75,11 +85,11 @@ p {
 .div1 {
     grid-row: span 5 / span 5;
     background-color: var(--color-consistent-schedule);
-    margin: 12px;
+    margin: var(--margin-cards);
     position: relative;
 }
 .div1 h2 {
-    font-size: 3rem;
+    font-size: var(--font-size-div1-h2);
 }
 .div1 img {
    position: absolute;
@@ -92,15 +102,15 @@ p {
     grid-column-start: 1;
     grid-row-start: 6;
     background-color: var(--color-create-post);
-    margin: 12px;
+    margin: var(--margin-cards);
     position: relative;
 }
 .div2 h2 {
-    font-size: 3rem;
+    font-size: var(--font-size-div2-h2);
 }
 .div2 img {
    position: absolute;
-   bottom: 10px;
+   bottom: var(--margin-cards);
    right: 25px;
 }
 
@@ -115,7 +125,7 @@ p {
     position: relative;
 }
 .div3 h1{
-  font-size: 4rem;
+  font-size: var(--font-size-div3-h1);
   font-weight: 700;
   margin-bottom: 12px;
 }
@@ -131,12 +141,12 @@ p {
     grid-column-start: 2;
     grid-row-start: 5;
     background-color: var(--color-manage-accounts);
-    margin: 12px;
+    margin: var(--margin-cards);
     overflow: hidden;
     position: relative;
 }
 .div4 h2 {
-    font-size: 2.5rem;
+    font-size: var(--font-size-div4-h2);
     margin-top: 85px;
     position: absolute;
 }
@@ -149,13 +159,13 @@ p {
     grid-column-start: 3;
     grid-row-start: 5;
     background-color: var(--color-create-post);
-    margin: 12px;
+    margin: var(--margin-cards);
     overflow: hidden;
     position: relative;
     
 }
 .div5 h2 {
-    font-size: 2.5rem;
+    font-size: var(--font-size-div5-h2);
     position: absolute;
     margin-top: 20px;
 }
@@ -169,11 +179,11 @@ p {
     grid-column-start: 2;
     grid-row-start: 8;
     background-color: var(--color-manage-accounts);
-    margin: 12px;
+    margin: var(--margin-cards);
     position: relative;
 }
 .div6 h2 {
-    font-size: 4rem;
+    font-size: var(--font-size-div6-h2);
     padding: 0;
     margin: 0;
 }
@@ -193,11 +203,11 @@ p {
     grid-column-start: 3;
     grid-row-start: 8;
     background-color: var(--color-social-media);
-    margin: 12px;
+    margin: var(--margin-cards);
     height: 250px;
 }
 .div7 h2 {
-    font-size: 3rem;
+    font-size: var(--font-size-div7-h2);
     margin-top: 20px;
     color: white;
     margin-left: 50px;
@@ -207,12 +217,12 @@ p {
     grid-column-start: 4;
     grid-row-start: 1;
     background-color: var(--color-schedule-to-social);
-    margin: 12px;
+    margin: var(--margin-cards);
     position: relative;
     overflow: hidden;
 }
 .div8 h2 {
-    font-size: 2.5rem;
+    font-size: var(--font-size-div8-h2);
     margin-top: 20px;
 }
 .div8 p {
