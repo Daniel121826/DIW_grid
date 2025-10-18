@@ -7,11 +7,16 @@
     --color-analytics: #ff61a6;
     --color-background: #f2f2f2;
     --color-create-post: #ffda7b;
+    --color-purple: #7b61ff;
+}
 
+@font-face {
+  font-family: 'Variable', sans-serif;
+  src: url('assets/fonts/DMSans-VariableFont_opsz,wght.ttf') format('truetype');
 }
 body {
   background-color: var(--color-background);
-  font-family: 'Arial', sans-serif;
+  font-family: 'Variable', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -22,7 +27,7 @@ body {
 
 }
 .purple {
-    color: #7b61ff;
+    color: var(--color-purple);
 }
 .cursiva {
     font-style: italic;
@@ -46,14 +51,12 @@ p {
   font-style: italic;
 }
 
-.big-text {
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: #7b61ff;
-}
 
 .text-center {
   text-align: center;
+}
+.row{
+  display: flex;
 }
 
 .card {
@@ -73,9 +76,15 @@ p {
     grid-row: span 5 / span 5;
     background-color: var(--color-consistent-schedule);
     margin: 12px;
+    position: relative;
 }
 .div1 h2 {
     font-size: 3rem;
+}
+.div1 img {
+   position: absolute;
+   bottom: 110px;
+   right: 50px;
 }
 
 .div2 {
@@ -84,9 +93,15 @@ p {
     grid-row-start: 6;
     background-color: var(--color-create-post);
     margin: 12px;
+    position: relative;
 }
 .div2 h2 {
     font-size: 3rem;
+}
+.div2 img {
+   position: absolute;
+   bottom: 10px;
+   right: 25px;
 }
 
 .div3 {
@@ -97,11 +112,18 @@ p {
     background-color: var(--color-social-media);
     margin: 12px;
     color: white;
+    position: relative;
 }
 .div3 h1{
   font-size: 4rem;
   font-weight: 700;
   margin-bottom: 12px;
+}
+.div3 img {
+   position: absolute;
+   right: 21%;
+   bottom: 20%;
+
 }
 
 .div4 {
@@ -111,9 +133,15 @@ p {
     background-color: var(--color-manage-accounts);
     margin: 12px;
     overflow: hidden;
+    position: relative;
 }
 .div4 h2 {
     font-size: 2.5rem;
+    margin-top: 85px;
+    position: absolute;
+}
+.div4 img {
+   position: absolute;
 }
 
 .div5 {
@@ -124,12 +152,16 @@ p {
     margin: 12px;
     overflow: hidden;
     position: relative;
+    
 }
 .div5 h2 {
     font-size: 2.5rem;
+    position: absolute;
+    margin-top: 20px;
 }
 .div5 img {
    position: absolute;
+   bottom: -90px;
 }
 
 .div6 {
@@ -138,6 +170,21 @@ p {
     grid-row-start: 8;
     background-color: var(--color-manage-accounts);
     margin: 12px;
+    position: relative;
+}
+.div6 h2 {
+    font-size: 4rem;
+    padding: 0;
+    margin: 0;
+}
+.div6 p {
+    font-size: 1.2rem;
+    margin:0;
+    padding: 0;
+}
+.div6 img {
+   position: absolute;
+   justify-content: end;
 }
 
 .div7 {
@@ -149,12 +196,34 @@ p {
     margin: 12px;
     height: 250px;
 }
-
+.div7 h2 {
+    font-size: 3rem;
+    margin-top: 20px;
+    color: white;
+    margin-left: 50px;
+}
 .div8 {
     grid-row: span 7 / span 7;
     grid-column-start: 4;
     grid-row-start: 1;
     background-color: var(--color-schedule-to-social);
     margin: 12px;
+    position: relative;
+    overflow: hidden;
+}
+.div8 h2 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+.div8 p {
+    font-size: 1.4rem;
+    margin-top: 420px;
+    padding: 0;
+
+}
+.div8 img {
+   position: absolute;
+   bottom: 27%;
+
 }
         
